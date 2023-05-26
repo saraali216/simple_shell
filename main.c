@@ -54,7 +54,7 @@ void inicialize_data(data_of_program *dt, int argc, char *argv[], char **env)
 	dt->program_name = argv[0];
 	dt->input_line = NULL;
 	dt->cmd_name = NULL;
-	dt->exec_counter = 0;
+	dt->exec_count = 0;
 	if (argc == 1)
 		dt->file_descript = STDIN_FILENO;
 	else
