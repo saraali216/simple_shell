@@ -50,13 +50,11 @@ void expand_variables(data_of_program *data)
 		data->input_line = str_duplicate(ln);
 	}
 }
-
 /**
  * expand_alias-expand aliases
  * @dt: program's data struct
  * Return: nothing, set errno.
  */
-
 void expand_alias(data_of_program *dt)
 {
 	int i, j, prv_expand = 0;
@@ -64,9 +62,7 @@ void expand_alias(data_of_program *dt)
 
 	if (dt->input_line == NULL)
 		return;
-
 	buffer_add(ln, dt->input_line);
-
 	for (i = 0; ln[i]; i++)
 	{
 		for (j = 0; ln[i + j] && ln[i + j] != ' '; j++)
@@ -92,14 +88,12 @@ void expand_alias(data_of_program *dt)
 		dt->input_line = str_duplicate(ln);
 	}
 }
-
 /**
  * buffer_add-add string at end of buffer
  * @buffer: buffer will be filled
  * @str_add: string tocopy it in buffer
  * Return: nthg, sets errno
  */
-
 int buffer_add(char *buffer, char *str_add)
 {
 	int l, i;

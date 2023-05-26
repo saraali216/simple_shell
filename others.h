@@ -1,11 +1,11 @@
 #ifndef OTHERS_H
 #define OTHERS_H
- 
+
 #define UNUSED __attribute__((unused))
 #define PROMPT_MSG "$"
 #define BUFFER_SIZE 1024
 
-        /* FORMATTED STR FOR HELP BUILTIN */
+	/* FORMATTED STR FOR HELP BUILTIN */
 
 #define HELP_MSG "help=\n"\
 "help:\thelp [BUILTIN_NAME]\n\n"\
@@ -20,7 +20,7 @@
 "	env\n"\
 "	setenv\t[variable value]\n"\
 "	unset\t[variable]\n"\
-"	help\t[built_name]\n\n"        
+"	help\t[built_name]\n\n"
 
 #define HELP_CD_MSG "cd=\n"\
 "cd:\tcd [dir]\n\n"\
@@ -51,8 +51,5 @@
 "env:\tenv \n\n"\
 "	Print environment.\n\n"\
 "	The env command will be print a complete list of enviroment variables.\n\n"
-
-
-
 
 #endif
