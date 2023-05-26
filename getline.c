@@ -22,7 +22,7 @@ int _getline(data_of_program *dt)
 			array_cmds[i] = NULL;
 		}
 
-		rbytes = read(data->file_descript, &buff, BUFFER_SIZE - 1);
+		rbytes = read(dt->file_descript, &buff, BUFFER_SIZE - 1);
 		if (rbytes == 0)
 			return (-1);
 
