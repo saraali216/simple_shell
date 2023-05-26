@@ -5,7 +5,6 @@
  * @data:program's data struct
  * Return: nothing, sets errno.
  */
-
 void expand_variables(data_of_program *data)
 {
 	int i, j;
