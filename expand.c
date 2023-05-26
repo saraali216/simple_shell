@@ -2,7 +2,7 @@
 
 /**
  * expand_variables -expand variables
- * @dt:program's data struct
+ * @data:program's data struct
  * Return: nothing, sets errno.
  */
 

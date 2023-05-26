@@ -35,7 +35,7 @@ typedef struct info
 {
 	char *program_name;
 	char *cmd_name;
-	char input_line;
+	char *input_line;
 	int exec_count;
 	int file_descript;
 	char **tokens;
@@ -97,7 +97,7 @@ int check_logic_ops(char *array_cmds[], int i, char array_opr[]);
 
         /* expand.c */
 
-void expand_variables(data_of_program *dt);
+void expand_variables(data_of_program *data);
 void expand_alias(data_of_program *dt);
 int buffer_add(char *buffer, char *str_add);
 
