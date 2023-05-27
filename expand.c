@@ -8,7 +8,6 @@
 void expand_variables(data_of_program *data)
 {
 	int i, j;
-	/* char input_line = dt->input_line */
 	char ln[BUFFER_SIZE] = {0}, expsn[BUFFER_SIZE] = {'\0'}, *tmp;
 
 	if (!data->input_line)
